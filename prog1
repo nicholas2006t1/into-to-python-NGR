@@ -1,0 +1,44 @@
+#These string below represent the value of the food like eggs,chips,etc. 
+Eggs = 2.89
+Beef = 5.98
+Chips = 2.50
+ChocoBar = 1.89
+Cucu = 0.39
+Oil = 6.00
+#These are the questions that the person running the program answers
+#They talk about how many things you need for yourself along wiht your name. 
+username = input("What is you name?")
+Heggs = input("How many half a dozen eggs would you like?")
+HBeef = input("How many pounds of ground beef would you like?")
+Hchips = input("How many chips would you like?")
+Hchoco = input("How many chocolate bars would you like?")
+Hcucu = input("How many cucumbers would you like?")
+Hcooking = input("How many bottles of cooking oil would you like?")
+
+#These values here convert the string into a integer so the numbers
+#inputed into the program can be calcuated into a total.
+Heggs= int(Heggs)
+HBeef = int(HBeef)
+Hchips = int(Hchips)
+Hchoco = int(Hchoco)
+Hcucu = int(Hcucu)
+Hcooking = int(Hcooking)
+
+#These things below calculate how many things you have by the amount
+#they cost. 
+
+Teggs =(Eggs * Heggs)
+TBeef = (Beef * HBeef)
+TChips =(Chips * Hchips)
+TChoco = (ChocoBar * Hchoco)
+TCucu = (Cucu * Hcucu)
+TCooking = (Oil * Hcooking)
+
+# This calculates the sum total of all the things you want. 
+# This second total converts the total from a float to a string 
+#for the next section. 
+Total = (Teggs + TBeef + TChips + TChoco + TCucu + TCooking)
+Total = str(Total)
+
+#This just prints the last line that tells you your total. 
+print("Hi, " + username + "." + "Your total is " + Total)
